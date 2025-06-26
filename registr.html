@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | Умный Listik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login_style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1><i class="fas fa-check-circle"></i> Умный Listik</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li><a href="todo.html">Приложение</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="auth-btn" id="login-btn">Войти</a>
+            <a href="registr.html" class="auth-btn register-btn" id="register-btn">Регистрация</a>
+            <div class="user-menu" id="user-menu" style="display: none;">
+                <span id="username"></span>
+                <button id="logout-btn">Выход</button>
+            </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+</header>
+
+    <main class="container">
+        <section class="auth-container">
+            <h2><i class="fas fa-user-plus"></i> Регистрация</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="reg-name">Имя</label>
+                    <input type="text" id="reg-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" required>
+                    <div class="error-message" id="reg-email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Пароль</label>
+                    <input type="password" id="reg-password" required>
+                    <div class="error-message" id="reg-password-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm">Подтвердите пароль</label>
+                    <input type="password" id="reg-confirm" required>
+                    <div class="error-message" id="reg-confirm-error"></div>
+                </div>
+                <button type="submit" class="auth-btn">Зарегистрироваться</button>
+            </form>
+            <div class="auth-links">
+                <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Умный Listik. Все права защищены.</p>
+            <div class="social-links">
+                <a href="@Dimasyaveryfat"><i class="fab fa-telegram"></i></a>
+                <a href="https://github.com/Dimasyaaa"><i class="fab fa-github"></i></a>
+                <a href="https://vk.com/dimasiksuper69"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/registr_script.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация | Умный Listik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login_style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1><i class="fas fa-check-circle"></i> Умный Listik</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li><a href="todo.html">Приложение</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="auth-btn" id="login-btn">Войти</a>
+            <a href="registr.html" class="auth-btn register-btn" id="register-btn">Регистрация</a>
+            <div class="user-menu" id="user-menu" style="display: none;">
+                <span id="username"></span>
+                <button id="logout-btn">Выход</button>
+            </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+</header>
+
+    <main class="container">
+        <section class="auth-container">
+            <h2><i class="fas fa-sign-in-alt"></i> Вход в аккаунт</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" required>
+                    <div class="error-message" id="password-error"></div>
+                </div>
+                <button type="submit" class="auth-btn">Войти</button>
+            </form>
+            <div class="auth-links">
+                <p>Еще нет аккаунта? <a href="registr.html">Зарегистрируйтесь</a></p>
+                <p><a href="#">Забыли пароль?</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Умный Listik. Все права защищены.</p>
+            <div class="social-links">
+                <a href="@Dimasyaveryfat"><i class="fab fa-telegram"></i></a>
+                <a href="https://github.com/Dimasyaaa"><i class="fab fa-github"></i></a>
+                <a href="https://vk.com/dimasiksuper69"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/login_script.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

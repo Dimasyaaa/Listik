@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение | Умный Listik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1><i class="fas fa-check-circle"></i> Умный Listik</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li><a href="todo.html">Приложение</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="auth-btn" id="login-btn">Войти</a>
+            <a href="registr.html" class="auth-btn register-btn" id="register-btn">Регистрация</a>
+            <div class="user-menu" id="user-menu" style="display: none;">
+                <span id="username"></span>
+                <button id="logout-btn">Выход</button>
+            </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+</header>
+    <div class="container app-container">
+        <header class="app-header">
+            <h2><i class="fas fa-calendar-alt"></i> Планировщик Задач</h2>
+            <p>Управляй задачами по дням недели и дедлайнам</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="number" id="total-tasks">0</div>
+                    <div class="label">Всего задач</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number" id="completed-tasks">0</div>
+                    <div class="label">Выполнено</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number" id="overdue-tasks">0</div>
+                    <div class="label">Просрочено</div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="input-container">
+            <div class="input-group">
+                <input type="text" id="task-input" placeholder="Добавьте новую задачу...">
+                <input type="date" id="task-deadline">
+                <select id="task-day">
+                    <option value="">Без дня</option>
+                    <option value="1">Понедельник</option>
+                    <option value="2">Вторник</option>
+                    <option value="3">Среда</option>
+                    <option value="4">Четверг</option>
+                    <option value="5">Пятница</option>
+                    <option value="6">Суббота</option>
+                    <option value="0">Воскресенье</option>
+                </select>
+                <button id="add-task-btn"><i class="fas fa-plus"></i> Добавить</button>
+            </div>
+        </div>
+        
+        <div class="week-schedule">
+            <div class="day" data-day="1">Пн</div>
+            <div class="day" data-day="2">Вт</div>
+            <div class="day" data-day="3">Ср</div>
+            <div class="day" data-day="4">Чт</div>
+            <div class="day" data-day="5">Пт</div>
+            <div class="day weekend" data-day="6">Сб</div>
+            <div class="day weekend" data-day="0">Вс</div>
+        </div>
+        
+        <div class="tasks-container" id="tasks-container">
+            <div class="empty-state" id="empty-state">
+                <i class="fas fa-clipboard-list"></i>
+                <h3>Нет задач</h3>
+                <p>Добавьте свою первую задачу</p>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Все задачи</button>
+            <button class="filter-btn" data-filter="active">Активные</button>
+            <button class="filter-btn" data-filter="completed">Выполненные</button>
+            <button class="filter-btn" data-filter="overdue">Просроченные</button>
+        </div>
+    </div>
+
+    <script src="js/todo-script.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

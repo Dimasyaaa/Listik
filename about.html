@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработчик | Умный Listik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1><i class="fas fa-check-circle"></i> Умный Listik</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li><a href="todo.html">Приложение</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="auth-btn" id="login-btn">Войти</a>
+            <a href="registr.html" class="auth-btn register-btn" id="register-btn">Регистрация</a>
+            <div class="user-menu" id="user-menu" style="display: none;">
+                <span id="username"></span>
+                <button id="logout-btn">Выход</button>
+            </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+</header>
+
+    <main class="container">
+        <section class="about-section">
+            <h2>Обо мне</h2>
+            <p>Я-Dimasyaaa, разработчик, создавших данный умный планировщик задач, чтобы помочь вам стать более организованными и продуктивными.</p>
+            <div class="team">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Dimasyaaa</h3>
+                    <p>Frontend Developer</p>
+                    <div class="member-links">
+                        <a href="https://github.com/Dimasyaaa" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="@Dimasyaveryfat" target="_blank">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Deepseak</h3>
+                    <p>Соавтор, JS-разработчик</p>
+                    <div class="member-links">
+                        <a href="https://chat.deepseek.com/" target="_blank">
+                            <i></i> Сайт
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-info">
+                <h3>О проекте</h3>
+                <p>Умный Listik был создан с целью предоставить пользователям интуитивно понятный инструмент для управления их задачами. Наше приложение сочетает в себе простоту использования с продвинутыми функциями:</p>
+                <ul>
+                    <li>Распределение задач по дням недели</li>
+                    <li>Контроль сроков выполнения</li>
+                    <li>Статистика продуктивности</li>
+                    <li>Адаптивный дизайн для всех устройств</li>
+                    <li>Темная и светлая тема</li>
+                </ul>
+                
+                <h3>Технологии</h3>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-js"></i>
+                        <span>JS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Умный Listik. Все права защищены.</p>
+            <div class="social-links">
+                <a href="@Dimasyaveryfat"><i class="fab fa-telegram"></i></a>
+                <a href="https://github.com/Dimasyaaa"><i class="fab fa-github"></i></a>
+                <a href="https://vk.com/dimasiksuper69"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

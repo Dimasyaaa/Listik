@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная | Умный Listik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1><i class="fas fa-check-circle"></i> Умный Listik</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li><a href="todo.html">Приложение</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="auth-btn" id="login-btn">Войти</a>
+            <a href="registr.html" class="auth-btn register-btn" id="register-btn">Регистрация</a>
+            <div class="user-menu" id="user-menu" style="display: none;">
+                <span id="username"></span>
+                <button id="logout-btn">Выход</button>
+            </div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+</header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Организуйте свою жизнь с умом</h2>
+                <p>Инновационный планировщик задач с расписанием, дедлайнами и аналитикой</p>
+                <a href="todo.html" class="cta-button">Начать использовать</a>
+            </div>
+            <div class="hero-image">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Планировщик задач">
+                            <div class="carousel-caption">Удобное планирование задач</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Календарь и задачи">
+                            <div class="carousel-caption">Распределение по дням недели</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Аналитика продуктивности">
+                            <div class="carousel-caption">Статистика и аналитика продуктивности</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Синхронизация устройств">
+                            <div class="carousel-caption">Синхронизация между устройствами</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Безопасная авторизация">
+                            <div class="carousel-caption">Безопасная авторизация и защита данных</div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-control prev" aria-label="Предыдущий">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-control next" aria-label="Следующий">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="carousel-indicators">
+                        <div class="indicator active" data-index="0"></div>
+                        <div class="indicator" data-index="1"></div>
+                        <div class="indicator" data-index="2"></div>
+                        <div class="indicator" data-index="3"></div>
+                        <div class="indicator" data-index="4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Почему мой To-Do List лучше других?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-calendar-day"></i>
+                    <h3>Расписание по дням</h3>
+                    <p>Распределяйте задачи по дням недели для лучшего планирования и визуализации нагрузки</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Контроль дедлайнов</h3>
+                    <p>Напоминания о сроках выполнения, уведомления о просроченных задачах и визуальные индикаторы</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Аналитика продуктивности</h3>
+                    <p>Подробная статистика по выполненным задачам, графики продуктивности и оценка эффективности</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Синхронизация</h3>
+                    <p>Доступ к задачам с любого устройства с автоматической синхронизацией данных в реальном времени</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-lock"></i>
+                    <h3>Безопасная авторизация</h3>
+                    <p>Защита личных данных с помощью системы авторизации и синхронизация задач между устройствами</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bell"></i>
+                    <h3>Уведомления</h3>
+                    <p>Своевременные напоминания о предстоящих задачах и дедлайнах прямо на ваше устройство</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Умный Listik. Все права защищены.</p>
+            <div class="social-links">
+                <a href="@Dimasyaveryfat"><i class="fab fa-telegram"></i></a>
+                <a href="https://github.com/Dimasyaaa"><i class="fab fa-github"></i></a>
+                <a href="https://vk.com/dimasiksuper69"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
